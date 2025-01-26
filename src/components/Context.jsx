@@ -96,10 +96,10 @@ export default function Context() {
                 }
                 <div><Skills /></div>
                 <div><Contact /></div>
-                <div><MyInfo /></div>
                 <div className="theFox">
                     <img src="fox.gif"/>
                 </div>
+                <div><MyInfo /></div>
                 <div className="theGoat">
                     <img src="goat.png"/>
                 </div>
