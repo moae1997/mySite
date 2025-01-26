@@ -304,6 +304,15 @@
         grid-template-columns: 1fr;
     }
 
+    .myIntro p {
+        padding: 4vh;
+    }
+
+    .whoAmI {
+        padding-top: 0vh;
+    }
+    
+
     .whoAmI img {
         position: absolute;
         top: 10vh;
