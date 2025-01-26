@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <div className="headerCont">
             <div className="theM">
-                <a href="#"><FaMediumM  size={30} color="navy"/></a>
+                <a href="https://imaginative-sopapillas-e2203b.netlify.app/"><FaMediumM  size={30} color="navy"/></a>
             </div>
             <div>
                 <nav className="theNav">
