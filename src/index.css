@@ -1,68 +1,416 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mooli&family=Petit+Formal+Script&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.content {
+    background-color: whitesmoke;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.myIntro {
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-top: 20vh;
+    margin-bottom: 15vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.myIntro p {
+    font-size: 2.5vh;
+    height: 20vh;
+    text-align: center;
+    font-family: "Lora", serif;
+    color: navy;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.headerCont {
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 1vh;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.theNav a {
+    font-size: 2.5vh;
+    margin-right: 2vh;
+    text-decoration: none;
+    font-family: "Mooli", serif;
+    color: navy;
+}
+
+.contextCont {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.whoAmI {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vh;
+}
+
+.whoAmI img {
+    position: fixed;
+    opacity: 0.8;
+    height: 30vh;
+    border-radius: 50%;
+    box-shadow: 0.1vh 0.1vh 0.1vh 0.1vh gray;
+}
+
+.iAm {
+    font-size: 3vh;
+    color: navy;
+    position: fixed;
+    top: 35vh;
+    font-family: "Mooli", serif;
+}
+
+.projectCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2vh;
+    margin-bottom: 20vh;
+
+}
+
+.proj {
+    background-color: whitesmoke;
+    border: none;
+    padding: 0.1vh;
+    margin-right: 3vh;
+    margin-top: 3vh;
+    
+}
+
+.proj img {
+    height: 25vh;
+    box-shadow: 0.1vh 0.1vh 0.3vh 0.1vh black;
+    width: 100%;
+    margin-bottom: 0.5vh;
+}
+
+.selectedProjCont {
+    border: 0.1vh solid lightgray;
+    margin: 5vh;
+    margin-bottom: 20vh;
+}
+
+.selectedProj {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 2vh;
+    margin: auto;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.goBack {
+    width: 90%;
+    margin: auto;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: end;
+}
+
+.goBack button {
+    border: none;
+    background-color: white;
+}
+
+.selectedProj h2 {
+    margin-bottom: 2vh;
+}
+
+.selectedProj p {
+    font-size: 3vh;
+    margin-bottom: 1vh;
+    font-family: "Lora", serif; 
+}
+
+.description {
+    margin-left: 3vh;
+    text-align: center;
+}
+
+.selectedProj button {
+    background-color: lightgray;
+    border-radius: 5px;
+    border: none;
+    padding: 0.2vh;
+}
+
+.selectedProj a {
+    color: navy;
+    text-decoration: none;
+}
+
+.selectedProj img {
+    height: 25vh;
+    width: 30vh;
+    box-shadow: 0.1vh 0.1vh 0.3vh 0.1vh black;
+    margin-bottom: 0.5vh;
+}
+
+.skillList {
+    margin: 5vh;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5vh;
+    margin-bottom: 15vh;
+}
+
+.contactForm {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15vh;
+}
+
+.contactForm form {
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+    display: grid;
+    width: 30vh;
+}
+
+.contactForm h2 {
+    text-align: center;
+    font-family: "Petit Formal Script", serif;
+    font-size: 4vh;
+}
+
+.contactForm label {
+    font-family: "Mooli", serif;
+    font-size: 2vh;
+    margin-bottom: 0.2vh;
+}
+
+.contactForm input {
+    font-family: "Mooli", serif;
+    height: 2.5vh;
+    border-radius: 1vh;
+    border: 0.1vh solid navy;
+    margin-bottom: 0.5vh;
+    padding: 1vh;
+}
+
+.contactForm textarea {
+    height: 7vh;
+    border-radius: 1vh;
+    border: 0.1vh solid navy;
+    margin-bottom: 2vh;
+    font-family: "Mooli", serif;
+    padding-left: 1vh;
+}
+
+.contactForm button {
+    font-family: "Mooli", serif;
+    background-color: whitesmoke;
+    border-radius: 1vh;
+    border: 0.1vh solid navy;
+    font-size: 1.5vh;
+}
+
+.myInfoCont {
+    margin: 5vh;
+    margin-bottom: 10vh;
+}
+
+.myInfoCont tr {
+    height: 8vh;
+} 
+
+.myInfoCont td {
+    width: 8vh;
+    font-family: "Mooli", serif;
+}
+
+.myPics {
+    margin-top: 10vh;
+    display: flex;
+    margin-left: 40vh;
+}
+
+.carousel-item img {
+    height: 30vh;
+    border-radius: 50%;
+    box-shadow: 0.1vh 0.1vh 0.1vh 0.1vh gray;
+}
+
+.footerCont {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+
+.addMessage h3 {
+    color: green;
+}
+
+.addMessage button {
+    border: 0.1 solid navy;
+    padding: 0.3vh;
+    margin-left: 1vh;
+}
+
+.addMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.removeMessage {
+    display: none;
+}
+
+.theTree img {
+    border-radius: 0;
+    box-shadow: none;
+    position: fixed;
+    bottom: 0;
+    left: 4vh;
+    height: 40vh;
+}
+
+.theFox img {
+    position: absolute;
+    top: 210vh;
+    left: 60vh;
+}
+
+.theGoat {
+    display: flex;
+    justify-content: end;
+}
+
+.theChess img {
+    height: 40vh;
+    position: absolute;
+    top: 150vh;
+    right: -11vh;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    /* css for the profile picture section */
+    .contextCont {
+        grid-template-columns: 1fr;
+    }
+
+    .whoAmI img {
+        position: absolute;
+        top: 10vh;
+        right: 18vh;
+        height: 18vh;
+    }
+    
+    .iAm {
+        display: none;
+    }
+
+    .theTree {
+        display: none;
+    }
+
+    /* css for the intro section */
+
+    .myIntro {
+        margin-left: 1vh;
+        margin-right: 1vh;
+        margin-top: 25vh;
+    }
+
+    .myPics {
+       display: none;
+    }
+
+    /* absolute items */
+
+    .theGoat {
+        display: none;
+    }
+
+    .theChess img {
+        height: 20vh;
+        position: absolute;
+        top: 163vh;
+        right: -5vh;
+    }
+
+    .theFox img {
+        top: 249vh;
+        left: 11vh;
+    }
+
+    /* contact section */
+    
+    .myInfoCont {
+       margin-top: 35vh;
+    }
+
+    /* project section */
+
+    .projectCont {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5vh;
+        margin-bottom: 20vh;
+    }
+
+    /* selected project section */
+
+    .selectedProj {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 0vh;
+        width: 100%;
+    }
+
+    .selectedProjCont {
+        border: none;
+        margin: 3vh;
+    }
+
+    .description {
+        margin-left: 0vh;
+        margin-bottom: 5vh;
+        margin-top: 2vh;
+    }
+
+    .selectedProj p {
+        height: 45vh;
+        font-size: 3vh;
+        margin-bottom: 1vh;
+        font-family: "Lora", serif; 
+    }
+
+    /* contact form section */
+
+    .contactForm input {
+        font-size: 1.8vh;
+    }
+    
+    .contactForm textarea {
+       font-size: 1.8vh;
+    }
+
+    .addMessage h3 {
+        color: green;
+        font-size: 2.5vh;
+    }
+    
+    .addMessage button {
+        border: none;
+        padding: 0;
+        margin-left: 1vh;
+    }
+
+    
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
