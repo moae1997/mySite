@@ -278,10 +278,9 @@
     height: 40vh;
 }
 
-.theFox img {
-    position: absolute;
-    top: 210vh;
-    left: 60vh;
+.theFox {
+    display: flex;
+    justify-content: center;
 }
 
 .theGoat {

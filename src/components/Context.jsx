@@ -21,14 +21,21 @@ export default function Context() {
             "title": "Daily Goals",
             "img": "dailygoalimg.png",
             "link": "https://dailygoals-1.onrender.com/",
-            "description": "A responsive website to solve the problem of not getting things done. Typing up a goal with allow a user not to forget what they have set to be completed. Also there is a feature to cross the goal out once completed which gives an incentive to complete the goal"
+            "description": "This website addresses the common struggle of disorganization and procrastination by providing a simple yet effective daily goal-setting tool. Users can easily input their daily objectives and have them securely saved, allowing for consistent tracking and review. A key feature is the ability to mark goals as complete, providing a tangible sense of accomplishment and reinforcing positive habits. This project provided valuable experience integrating front-end technologies with back-end database management, utilizing React for the user interface and MySQL for data persistence, skills which I've subsequently added to my skillset"
         },
         {
             "id": 2,
             "title": "Will Bank",
             "img": "bankofwills.png",
             "link": "https://bank-of-wills.onrender.com/",
-            "description": "I have crafted a user-friendly website that allows individuals to submit their wills securely Designed an intuitive interface with a unique DEMO on the login page that showcases the site's features without requiring login details"
+            "description": "This website provides a platform for users to create and securely store their wills. As one of my early projects, its development was a valuable learning experience, driven by extensive trial and error. Key features include a user authentication system with login and 'forgot password' functionality to ensure secure access. Recognizing the importance of user experience, I also implemented a demo section, allowing visitors to explore the website's core features and interface without requiring an account"
+        },
+        {
+            "id": 3,
+            "title": "My Portfolio",
+            "img": "portfolio.png",
+            "link": "https://imaginative-sopapillas-e2203b.netlify.app/",
+            "description": "This portfolio serves as a dynamic showcase of my coding projects and a representation of my skills and interests. It's designed to evolve as I continue to learn and create, with new projects regularly added. Beyond simply displaying my work, this portfolio offers insights into who I am as a developer. To facilitate connection and collaboration, I've included both a direct contact section and a convenient contact form for visitors to easily reach out"
         }
     ]
 
