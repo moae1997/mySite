@@ -70,7 +70,7 @@
 
 .projectCont {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 2vh;
     margin-bottom: 20vh;
 
@@ -86,7 +86,7 @@
 }
 
 .proj img {
-    height: 25vh;
+    height: 40vh;
     box-shadow: 0.1vh 0.1vh 0.3vh 0.1vh black;
     width: 100%;
     margin-bottom: 0.5vh;
@@ -228,16 +228,20 @@
     font-family: "Mooli", serif;
 }
 
-.myPics {
-    margin-top: 10vh;
+.imageDiv {
     display: flex;
-    margin-left: 40vh;
+    justify-content: center;
+    align-items: center;
 }
 
-.carousel-item img {
+.myPics {
+    width: 29.5%;
+    box-shadow: -0.1vh -1vh 6vh 0.3vh gray;
+    background-color: lightgray;
+}
+
+.myPics img {
     height: 30vh;
-    border-radius: 50%;
-    box-shadow: 0.1vh 0.1vh 0.1vh 0.1vh gray;
 }
 
 .footerCont {
@@ -288,13 +292,6 @@
     justify-content: end;
 }
 
-.theChess img {
-    height: 40vh;
-    position: absolute;
-    top: 150vh;
-    right: -11vh;
-}
-
 
 @media screen and (max-width: 600px) {
 
@@ -336,21 +333,19 @@
         margin-bottom: 25vh;
     }
 
+    .imageDiv {
+        margin-top: 30vh;
+    }
+
     .myPics {
-       display: none;
+        width: 70%;
+       
     }
 
     /* absolute items */
 
     .theGoat {
         display: none;
-    }
-
-    .theChess img {
-        height: 20vh;
-        position: absolute;
-        top: 163vh;
-        right: -5vh;
     }
 
     .theFox {
@@ -375,7 +370,7 @@
     .projectCont {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 5vh;
+        padding: 1vh;
         margin-bottom: 20vh;
     }
 
@@ -424,6 +419,13 @@
         border: none;
         padding: 0;
         margin-left: 1vh;
+    }
+
+    /* my info section */
+
+    .myInfoCont td {
+        height: 10vh;
+        width: 12vh;
     }
 
     

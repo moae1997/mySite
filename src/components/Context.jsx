@@ -110,9 +110,6 @@ export default function Context() {
                 <div className="theGoat">
                     <img src="goat.png"/>
                 </div>
-                <div className="theChess">
-                    <img src="king.png" />
-                </div>
                 <Footer />
             </div>
         </div>
